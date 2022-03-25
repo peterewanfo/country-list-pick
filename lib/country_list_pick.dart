@@ -112,8 +112,8 @@ class _CountryListPickState extends State<CountryListPick> {
               children: <Widget>[
                 if (widget.theme?.isShowFlag ?? true == true)
                   Flexible(
-                    child: Padding(
-                      padding: const EdgeInsets.symmetric(horizontal: 5.0),
+                    child: Container(
+                      //padding: const EdgeInsets.symmetric(horizontal: 5.0),
                       child: Image.asset(
                         selectedItem!.flagUri!,
                         package: 'country_list_pick',
@@ -123,15 +123,15 @@ class _CountryListPickState extends State<CountryListPick> {
                   ),
                 if (widget.theme?.isShowCode ?? true == true)
                   Flexible(
-                    child: Padding(
-                      padding: const EdgeInsets.symmetric(horizontal: 5.0),
+                    child: Container(
+                      //padding: const EdgeInsets.symmetric(horizontal: 5.0),
                       child: Text(selectedItem.toString()),
                     ),
                   ),
                 if (widget.theme?.isShowTitle ?? true == true)
                   Flexible(
-                    child: Padding(
-                      padding: const EdgeInsets.symmetric(horizontal: 5.0),
+                    child: Container(
+                      //padding: const EdgeInsets.symmetric(horizontal: 5.0),
                       child: Text(selectedItem!.toCountryStringOnly()),
                     ),
                   ),
